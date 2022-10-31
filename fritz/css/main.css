@@ -1,0 +1,513 @@
+:root {
+    --mc: #233B5F;
+    --sc: #C03E23;
+    --bc: #F8F8EE;
+    --wc: #fff;
+}
+
+.Wrap {
+    width: 100%;
+    min-width: 1900px;
+}
+
+.inner {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.sc_tit {
+    font-size: 55px;
+    font-weight: 700;
+    color: var(--mc);
+    letter-spacing: 0.05em;
+}
+
+.sc_info h3 {
+    font-size: 31px;
+    font-weight: 500;
+    color: var(--mc);
+}
+
+.sc_info p {
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.028em;
+    color: var(--mc);
+    margin-bottom: 11px;
+}
+
+
+/* 팝업창 */
+.popup {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.25);
+    z-index: 9999;
+}
+
+.popup .pop_case {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.popup .pop_inner {
+    width: 520px;
+    height: 560px;
+    padding: 40px 20px 50px 20px;
+    background: #fff;
+}
+
+.popup .pop_con img {
+    width: 500px;
+    border: 3px solid #333;
+    /* height: 700px; */
+}
+
+.popup .pop_close {
+   color: #333;
+   font-size: 13px;
+   font-weight: 500;
+   margin-top: 13px;
+}
+
+.popup .pop_close button {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+/* 헤더 */
+.Header .line {
+    height: 15px;
+    background-color: var(--mc);
+}
+
+.Header .container {
+    display: flex;
+    width: 1700px;
+    margin: 0 auto;
+    padding: 20px 0;
+    justify-content: space-between;
+
+    align-items: center;
+    font-size: 23px;
+    font-weight: 600;
+    color: var(--mc);
+}
+
+.Header .Gnb>ul {
+    display: flex;
+    gap: 50px;
+    font-size: 23px;
+    font-weight: 600;
+}
+.Header .Gnb ul>li>a:hover {
+    color: var(--sc);
+}
+
+.Header .Gnb>ul>li { position: relative; }
+.Header .Gnb>ul>li a { display: block; }
+/* .Header .smenu a:hover { display: inline-block; border-bottom: 1px solid var(--sc); } */
+
+.Header .Gnb>ul>li ul {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    width: 170px;
+    padding: 10px 0 0 0;
+    visibility: hidden;
+    line-height: 50px;
+    transform: translateX(-50%);
+    opacity: 0;
+
+    text-align: center;
+    color: var(--mc);
+    background: var(--wc);
+    font-size: 15px;
+    font-weight: 500;
+    /* transition: 1s; */
+    /* opacity: 0; */
+    z-index: 999;
+}
+
+.Header .Gnb>ul>li:hover ul {
+    top: 28px;
+    left: 50%;
+    opacity: 1;
+    visibility: visible;
+    transition: 0.5s;
+}
+/* nav > ul > li > a:hover+.smenu{
+    display: block;
+} */
+.Header .Gnb>ul li ul li {
+    display: block;
+    border-bottom: 1px solid var(--mc);
+}
+
+
+
+.Header .Logo img {
+    width: 100px;
+    height: 114px;
+}
+
+.Header  .H_right {
+    display: flex;
+    gap: 50px; 
+}
+
+.Header .H_right li>a {
+    display: inline-block;
+}
+
+.Header .H_right li>a:hover {
+    color: var(--sc);
+}
+
+
+/* 메인 */
+.Main .Main_Visual {
+    max-width: 1920px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+.Main .Main_Visual figure{
+    width: 1920px;
+    height: calc(100vh - 169px);
+}
+
+
+/* Main_Visual act */
+.Main_Visual .Main_act {
+    max-width: 1900px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.Main_Visual .Main_act .wheel{
+    position: absolute;
+    bottom: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+}
+
+.Main_act .wheel i {
+    position: absolute;
+    top: 0;
+    font-size: 30px;
+    color: #fff;
+    animation: wheel 2s infinite;
+    z-index: 999;
+}
+
+@keyframes wheel {
+    to {
+        top: 20px;
+    }
+}
+
+.Main_Visual .Main_act {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 15px;
+    /* font-weight: 300;
+    white-space: nowrap;
+    justify-content: center; */
+    color: #fff;
+    z-index: 999;
+}
+
+/* Section01 */
+.Section01 { padding: 100px 0 150px 0;}
+
+.Section01 .sc_tit {
+    position: relative;
+    display: inline-block;
+}
+
+.Section01 .sc_tit h2 {
+    padding: 0 300px 25px 0;
+    border-bottom: 5px solid var(--mc);
+}
+
+.Section01 .sc_tit figure { margin: 25px 0 100px 0; }
+.Section01 .sc_tit img {
+    vertical-align: top;
+    width: 250px;
+    height: 51px;
+}
+
+/* .Section01 .sc_tit h2::before {
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 450px;
+    height: 0;
+    border-top: 3px solid var(--mc);
+    시간없어서 그냥 패딩으로 악세사리 만듬 수정할것.
+} */
+
+
+.Section01 .sc_info { position: relative; }
+.Section01 .sc_info h3 { margin-left: 50px; padding-bottom: 60px;}
+.Section01 .sc_info h3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 31px;
+    height: 31px;
+    background: var(--mc);
+}
+
+
+
+/* Section02 커피클럽 배너*/
+.Section02 {
+    margin-top: 100px;
+    padding: 50px 0;
+    height: 300px;
+    background-color: var(--bc);
+}
+
+.Section02 .inner { 
+    display: flex;
+    align-items: center;
+}
+
+.Section02 img {
+    width: 662px;
+    height: 195px;
+}
+
+.Section02 .sc_banner {
+    margin: 0 auto;
+    text-align: center;
+
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 29px;
+    color: var(--mc);
+}
+
+.Section02 .sc_banner>p {
+    margin-bottom: 20px;
+}
+
+.Section02 .sc_go {
+    display: inline-block;
+    padding: 10px 40px;
+    border: 2px solid var(--mc);
+}
+
+.Section02 .sc_go:hover {
+    background-color: var(--mc);
+    color: var(--bc);
+    transition: 0.3s;
+}
+
+.Section02 .sc_go p{
+    display: inline-block;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+
+/* .Section02 .sc_go img{
+    width: 51px;
+    height: 5px;   
+} */
+
+/* Section03 캡슐 하우스커피 */
+.Section03 { padding: 100px 0 150px 0; }
+.Section03 .sc_tit {
+    position: relative;
+    text-align: right;
+    justify-content: flex-end;
+    color: var(--sc);
+}
+
+.Section03 .sc_tit h2 {
+    display: inline-block;
+    padding: 0 0 25px 100px;
+    border-bottom: 5px solid var(--sc);
+}
+
+.Section03 .sc_tit figure { margin: 25px 0 100px 0; }
+.Section03 .sc_tit img {
+    vertical-align: top;
+    height: 51px;
+}
+
+.Section03 .sc_info h3 {
+    font-size: 31px;
+    font-weight: 500;
+    color: var(--sc);
+}
+
+.Section03 .sc_info { position: relative; }
+.Section03 .sc_info h3 { margin-left: 50px; padding-bottom: 60px;}
+.Section03 .sc_info h3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 31px;
+    height: 31px;
+    background: var(--sc);
+}
+
+.Section03 .house_ct {
+    display: flex;
+    justify-content: space-between;
+}
+.Section03 .house_ct .House_slider{
+    max-width: 689px;
+    width: 100%;
+    max-height: 689px;
+    height: 100%;
+    margin-bottom: 70px;
+}
+
+.Section03 .house_info {
+    max-width: 689px;
+    width: 100%;
+    max-height: 689px;
+    height: 100%;
+    padding: 100px 110px;
+    text-align: center;
+    border: 6px solid var(--sc);
+}
+
+.Section03 .house_info figure {
+    width: 480px;
+    height: 125px;
+    margin-bottom: 60px;
+}
+
+.Section03 .house_info p {
+    font-size: 29px;
+    font-weight: 500;
+    color: var(--sc);
+    line-height: 45px;
+    margin-bottom: 91px;
+}
+
+.Section03 .sc_go {
+    display: inline-block;
+    padding: 20px 82px;
+    font-size: 500;
+    border: 3px solid var(--sc);
+    background: var(--sc);
+    color: var(--wc);
+}
+
+.Section03 .sc_go:hover {
+    background: var(--fc);
+    color: var(--sc);
+    transition: 0.3s;
+}
+
+.Section03 .sc_go a {
+    display: inline-block;
+    font-size: 21px;
+}
+
+.Section03 .house_pd_top { display: flex; justify-content: space-between; margin-bottom: 30px;}
+.Section03 .house_pd img { max-width: 100%; margin-bottom: 20px; }
+.Section03 .house_pd figure {
+    position: relative;
+    width: 436px;
+    /* margin: 0 auto; */
+    text-align: center;
+}
+
+.Section03 .house_pd .pd_b {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    transition: opacity 0.5s linear;
+}
+
+.Section03 figure:hover .pd_b {
+    opacity: 1;
+}
+
+.Section03 .pd_b {
+    display: block;
+}
+
+.Section03 .house_pd_btm { display: flex; justify-content: space-between;  margin-bottom: 30px;}
+.Section03 .pd_tit {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--mc);
+    margin-bottom: 12px;
+}
+.Section03 .pd_pr {
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--mc);
+}
+
+.Footer {
+    padding: 50px 0;
+    background: var(--mc);
+    color: var(--wc);
+}
+
+.Footer .inner {
+    display: flex;
+    text-align: center;
+}
+
+.Footer .F_logo {
+    margin-right: 50px;
+}
+
+.Footer .Address { width: 700px; text-align: left; }
+.Footer .Privacy a { display: inline-block; }
+.Footer .Address .Privacy {
+    font-size: 15px;
+    font-weight: 500;
+    color:var(--pc);
+    margin-bottom: 30px;
+}
+
+.Footer .Addr {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 1.7;
+}
+
+.Footer .Addr ul>li{ display: inline-block; }
+.Footer .Addr ul>li~li::before {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 10px;
+    background: #ddd;
+    margin: 0 10px;
+}

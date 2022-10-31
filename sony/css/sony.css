@@ -1,0 +1,597 @@
+.header { line-height: 60px; background: #000; }
+.header .innner {
+    display: flex;
+    max-width: 1420px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    color: #fff;
+}
+
+.innner .gnb { margin: 0 auto;}
+.innner .gnb>ul { display: flex; font-size: 19px; font-weight: 500;}
+.innner .gnb>ul>li { position: relative; padding: 0 25px; }
+.innner .gnb>ul>li a { display: block; padding: 0 25px; }
+.innner .gnb>ul ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    z-index: 999;
+    width: 180px;
+    line-height: 60px;
+    transform: translateX(-50%);
+    text-align: center;
+
+    background: #000;
+    font-size: 15px;
+    font-weight: 300;
+}
+.innner .gnb>ul>li:hover ul { display: block; }
+.icon i {
+    margin-right: 20px;
+    font-size: 21px;
+    font-weight: 500;
+}
+.mbtn {
+    display: none;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    font-size: 10px;
+    padding: 5px;
+    line-height: 1;
+}
+
+.innner img {width: 100px;}
+
+.mainVisual { position: relative; width: 100%; margin: 0 auto;}
+
+.main .img_box img {
+    width: 100%;
+    height:100vh;
+    filter: brightness(0.5);
+    object-fit: cover;
+}
+
+.mainVisual .slogan {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-10%);
+
+    text-align: center;
+    color: #fff;
+    transition: all 0.8s;
+}
+
+.slogan h2 {
+    font-size: 91px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.slogan p {
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.mainVisual .wheel {
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 30px;
+    height: 45px;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    font-size: 0;
+}
+
+.mainVisual .wheel span {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3px;
+    height: 12px;
+    background: #fff;
+    border-radius: 1px;
+    animation: wheel 0.5s infinite;
+}
+
+@keyframes wheel {
+    to {
+        top: 15px;
+    }
+}
+
+
+.new { position: relative; padding: 100px 0;}
+.new .bgProduct {
+    display: flex;
+    max-width: 1450px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-around
+}
+
+.new .basicSlider { max-width: 620px; width:100%; }
+.new .basicSlider img { max-width: 100%; }  
+.new .bgInfo { text-align: left; padding: 100px 0; }
+
+.new .bgInfo h3 {
+    font-size: 49px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.new .bgInfo span {
+    display: block;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    color:  #6666ff;
+}
+.new .bgInfo strong {
+    display: inline-block;
+    font-size: 45px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    line-height: 55px;
+    letter-spacing: -1px;
+}
+.new .bgInfo p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 20px;
+}
+
+.new .bkProduct{
+    display: flex;
+    max-width: 1450px;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.new .blackSlider {width: 620px;}
+
+.button_base {
+    margin: 0;
+    border: 0;
+    font-size: 18px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -25px;
+    width: 250px;
+    height: 50px;
+    text-align: center;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-user-select: none;
+    cursor: default;
+}
+
+.button_base:hover {
+    cursor: pointer;
+}
+
+.b05_3d_roll {
+    perspective: 500px;
+    -webkit-perspective: 500px;
+    -moz-perspective: 500px;
+}
+
+.b05_3d_roll div {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border: #6666ff solid 3px;
+    pointer-events: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.b05_3d_roll div:nth-child(1) {
+    color: #6666ff;
+    background-color:#6666ff;
+    transform: rotateX(90deg);
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transform-origin: 50% 50% -25px;
+    -webkit-transform-origin: 50% 50% -25px;
+    -moz-transform-origin: 50% 50% -25px;
+}
+
+.b05_3d_roll div:nth-child(2) {
+    color: #000000;
+    background-color: #ffffff;
+    transform: rotateX(0deg);
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transform-origin: 50% 50% -25px;
+    -webkit-transform-origin: 50% 50% -25px;
+    -moz-transform-origin: 50% 50% -25px;
+}
+
+.b05_3d_roll:hover div:nth-child(1) {
+    color: #ffffff;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transform: rotateX(0deg);
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+}
+
+.b05_3d_roll:hover div:nth-child(2) {
+    background-color: #000000;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transform: rotateX(-90deg);
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+}
+
+
+.new .bkProduct .bkInfo { text-align: right; padding: 150px 0; }
+.new .bkInfo span {
+    display: block;
+    font-size: 19px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+.new .bkInfo h4 {
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+.new .bkInfo strong {
+    display: inline-block;
+    font-size: 45px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    line-height: 55px;
+}
+.new .bkInfo p {
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 80px;
+    line-height: 22px;
+}
+
+
+.sonyStore { padding: 0 0 100px 0; }
+
+.sonyStore .container {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.sonyStore .left {width: 100%; overflow: hidden; }
+
+.sonyStore .right {
+    position: relative;
+    width: 100%;
+    padding: 70px 0;
+    overflow: hidden;
+    cursor: url(../img/arrow_r.1db549d7.cur),pointer;
+    padding-left: 80px;
+}
+
+.right .l_arrow h3 {
+    margin-bottom: 70px;
+}
+
+.sonyStore .right figure { margin-bottom: 30px; }
+.sonyStore .rightSlider strong {
+    display: block;
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.sonyStore .rightSlider span {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.l_arrow i {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    font-size: 0;
+    z-index: 999;
+}
+
+.l_arrow h3 {
+    font-size: 51px;
+    font-weight: 700;
+}
+
+.right .bar {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 4px;
+    margin: 0 auto;
+    background: #ddd;
+    overflow: hidden;
+}
+
+.right .bar span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background:  #6666ff;
+    transition: 0.4s;
+}
+
+.product { background-color: #f4f4f4; padding: 100px 0;}
+.product .container { width: 100%; margin: 0 auto; }
+
+.product .container h3 {
+    font-size: 49px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.product .item { display: flex; }
+.product .item figure { width: 25%; overflow: hidden; border-right: 1px solid #e1e1e1;}
+.product .item figure:hover { background-color:#6666ff;}
+
+.product .item img { margin: 70px 0; transform: translateX(40%);}
+.product .item img:hover { transform: translateX(0); transition: all 0.3s;  }
+
+.product .item a {display: inline-block; margin: 0 30px; font-size: 23px; font-weight: 600; }
+
+.footer {
+    background: #000;
+}
+
+.footer .container {
+    width: auto;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+     /* 헤더 반응형 */
+    .header { line-height: 60px; background: #000; }
+    .header .innner { display: flex; width: auto; margin: 0 auto; }
+
+    .innner h1 {margin-left: 30px;}
+
+    .innner .gnb {
+        position: fixed;
+        padding: 80px 0 0 0;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+
+        color:#fff;
+        background-color: #000;
+        border-right: 1px solid #ddd;
+        transition: left 0.5s;
+        z-index: 999;
+    }
+
+    .innner .gnb.on{ left: 0;}
+
+    .innner .gnb>ul { display: flex; line-height: 70px; font-size: 23px; font-weight: 600; flex-direction: column}
+    .innner .gnb>ul>li { position: relative;}
+
+    .innner .gnb>ul>li a {display: block; }
+    .innner .gnb>ul>li a:hover { color: #6666ff; }
+
+    .innner .gnb>ul ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .innner .gnb .smenu {
+        position: static;
+        top: 90px;
+        left: 50%;
+        display: none;
+        margin-bottom: 20px;
+        line-height: 30px;
+        
+        width: auto;
+        text-align: left;
+        transform: translateX(0);
+        border:none;
+        z-index: 999;
+    }
+    .innner .gnb>ul>li:hover .smenu {
+        display: none;
+        opacity: 1;
+        visibility: visible;
+        transition: 1s;
+    }
+    .icon i {display: none;}
+
+    .mbtn {display: block; position: fixed; top: 0; right: 0; }
+    .mainVisual {position: relative;}
+    .main .img_box img { max-height: 500px; }
+
+
+    /* 메인비주얼 반응형 */
+    .mainVisual .slogan {
+        transform: translateY(-20%);
+    }
+
+    .slogan h2 {
+        font-size: 47px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    .slogan p {
+        font-size: 11px;
+        font-weight: 200;
+        line-height: 14px;
+    }
+
+    .mainVisual .wheel {
+        position: absolute;
+        transform: translateX(-50%);
+        transform: translateY(100%);
+        width: 25px;
+        height: 38px;
+        border: 2px solid #fff;
+        border-radius: 15px;
+        font-size: 0;
+    }
+    
+    .mainVisual .wheel span {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 3px;
+        height: 12px;
+        background: #fff;
+        border-radius: 1px;
+        animation: wheel 0.5s infinite;
+    }
+
+    /* New 반응형 */
+    .new { position: relative; padding: 0; }
+    .new .bgProduct { flex-direction: column;}
+    .new .basicSlider { width: auto; }
+    .new .basicSlider img { width: 80%;  margin: 0 auto; }  
+    .new .bgInfo { display: block; text-align: left; padding: 30px 20px; margin: 0 auto; }
+
+
+    .new .bgInfo { text-align: left; }
+    .new .bgInfo h3 {
+        font-size: 35px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    .new .bgInfo span {
+        font-size: 21px;
+        font-weight: 500;
+        margin-bottom: 20px;
+        color:  #6666ff;
+    }
+    .new .bgInfo strong {
+        font-size: 31px;
+        font-weight: 400;
+        margin-bottom: 10px;
+        line-height: 38px;
+        letter-spacing: -1px;
+    }
+    .new .bgInfo p {
+        font-size: 9px;
+        font-weight: 300;
+        line-height: 15px;
+    }
+
+    .new .bkProduct{
+        padding: 20px 0;
+        margin-bottom: 70px;
+        flex-direction: column;
+    }
+
+    .new .blackSlider { width: auto; }
+    .new .blackSlider img { width: 80%;  margin: 0 auto; }
+    .new .bkProduct .bkInfo { position: relative; text-align: left; padding: 30px 20px; margin: 0 auto;}
+
+    .new .bkInfo span {
+        font-size: 21px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    .new .bkInfo h4 {
+        font-size: 35px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    .new .bkInfo p {
+        font-size: 9px;
+        font-weight: 300;
+        line-height: 15px;
+        margin-bottom: 50px;
+    }
+    
+    .new .back { position: absolute; left: -13%; }
+
+    .back .bkBuy a{
+        padding: 10px 40px;
+        font-size: 5px;
+        font-weight: 300;
+        border: 2px solid #6666ff;
+    }
+
+    /* Sony Store 반응형 */
+    .sonyStore { padding: 0 0 50px 0; }
+    .sonyStore .container {
+        position: relative;
+        display: fixed;
+        width: auto;
+    }
+    .sonyStore .left {  width: 100vw; overflow: hidden; }
+    
+    .sonyStore .right {
+        position: absolute;
+        width: 100%;
+        left: -8%;
+        bottom: -40%;
+    }
+
+    .sonyStore .rightSlider {
+        background: #f1f1f1;
+    }
+
+    .sonyStore .right img {
+        background-color: #fff;
+        padding-right: 50px;
+        margin-bottom: 10px;
+    }
+
+    .right .l_arrow h3 {
+        margin-bottom: 20px;
+    }
+
+    .sonyStore .right figure { margin-bottom: 30px; }
+    .sonyStore .rightSlider strong {
+        display: block;
+        font-size: 21px;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+ 
+    .product { background-color: #f4f4f4; padding: 100px 0;}
+    .product .container { width: auto; }
+
+    .product .item { display: fixed; }
+    .product .item figure { width: 500px; height: 250px; }
+
+    .product .item img { max-width: 100%;  margin: 50px 0; transform: translateX(40%);}
+    .product .item img:hover { transform: translateX(0); transition: all 0.3s;  }
+
+    .product .item a {display: inline-block; margin: 0 10px; font-size: 15px; font-weight: 600; }
+
+    
+    .footer .container {
+        width: auto;
+        margin: 0 auto;
+    }
+};

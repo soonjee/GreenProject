@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>죠스떡볶이 포포</title>
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="./assets/css/slick.css">
+    <link rel="stylesheet" href="./css/jaws.css">
+</head>
+<style>
+    /* * {
+        outline: 1px solid #f00;
+    } */
+</style>
+
+<body>
+    <div class="Wrap">
+        <!-- Header -->
+        <header class="header">
+            <section class="inner">
+                <h1>
+                    <a href=""><img src="./img/logo2.png" alt="" /></a>
+                </h1>
+                <nav class="gnb">
+                    <ul>
+                        <li>
+                            <a href="">BRAND</a>
+                            <ul>
+                                <li><a href="">대표인사말</a></li>
+                                <li><a href="">죠스이야기</a></li>
+                                <li><a href="">채용정보</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">MENU</a>
+                            <ul>
+                                <li><a href="">메인메뉴</a></li>
+                                <li><a href="">세트메뉴</a></li>
+                                <li><a href="">사이드메뉴</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">STORE</a>
+                            <ul>
+                                <li><a href="">매장 찾기</a></li>
+                                <li><a href="">매장 안내</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">COMMUNITY</a>
+                            <ul>
+                                <li><a href="">커뮤니티</a></li>
+                                <li><a href="">고객의 소리</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- <div class="right_menu">
+                    <div class="lang">
+                        <i class="xi-globus"></i>
+                        <p>
+                            <a href="">KR</a>
+                        </p>
+                    </div>
+                    <div class="util">
+                        <i class="xi-globus"></i>
+                        <p>
+                            <a href="">프랜차이즈</a>
+                        </p>
+                    </div>
+                </div> -->
+            </section>
+        </header>
+
+        <!-- Main-->
+        <main class="mian">
+            <section class="main_visual">
+                <figure>
+                    <img src="./img/mainVisual01.jpg" alt="">
+                </figure>
+            </section>
+            <!-- Main 인트로 -->
+            <section class="intro">
+                <div class="intro_inner">
+                    <div class="left">
+                        <div class="txt">
+                            <h2>
+                                <i class="xi-users-o"></i>
+                                NEW STORE
+                            </h2>
+                            <p class="tit">
+                                죠스떡볶이
+                                <br />
+                                <em>
+                                    새 매장을
+                                    <br />
+                                    소개합니다.
+                                </em>
+                            </p>
+                            <div class="util">
+                                <a href="">
+                                    죠스떡볶이 새 매장 보러가기
+                                    <i class="xi-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="txt">
+                            <h2>
+                                <i class="xi-shop"></i>
+                                STORE SEARCH
+                            </h2>
+                            <p class="tit">
+                                죠스떡볶이<br />
+                                <em>
+                                    매장,<br />
+                                    어디있지!?
+                                </em>
+                            </p>
+                            <div id="searchForm">
+                                <form action="javascript:searchAction()">
+                                    <input type="text" placeholder="가까운 지역명을 검색하세요.">
+                                    <!-- <a><i class="xi-search"></i></a> -->
+                                </form>
+                                <script>
+                                    function searchAction() {
+                                        var searchValue = $('#searchForm input').val();
+                                        if (searchValue.length < 5) {
+                                            alert('더 입력하세요.');
+                                        }
+                                        else {
+                                            alert(searchValue)
+                                        }
+                                        $('#searchForm input').val('');
+                                        $('#searchForm input').focus();
+                                    }
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Main 메뉴 -->
+            <section class="menu">
+                <div class="menu_inner">
+                    <div class="txt">
+                        <h2>
+                            <i class="xi-restaurant"></i>JAWS MENU
+                        </h2>
+                        <p>
+                            오늘 죠스에서 <br />
+                            <em>
+                                뭐 먹을까?
+                            </em>
+                        </p>
+                        <div class="util">
+                            <a href="">
+                                죠스떡볶이 전체메뉴 보러가기
+                                <i class="xi-play"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Main 쿠폰 -->
+            <section class="coupon">
+                <div class="coupon_inner">
+                    <figure>
+                        <a href=""><img src="./img/img_mobile.png" alt=""></a>
+                    </figure>
+                    <div class="txt">
+                        <h2>
+                            <i class="xi-gift-o">JAWS MOBILE COUPON</i>
+                        </h2>
+                        <p class="tit">
+                            배달도 되고,<br />
+                            선물도 됩니다!<br />
+                            <em>
+                                죠스떡볶이
+                            </em>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- Main SNS -->
+            <section class="sns">
+                <div class="sns_inner">
+                    <h2>
+                        <i class="xi-comment-o"></i> JAWS COMMUNITY
+                    </h2>
+                    <p class="tit">
+                        죠스는 항상
+                        <em>
+                            즐겁습니다.
+                        </em>
+                    </p>
+                </div>
+                <div class="sns_slides">
+                    <figure class="s_d">
+                        <div class="s_info">
+                            <p><i class="xi-facebook-official"></i>Face Book</p>
+                            <div class="sns_txt">#제 1회 #죠스문예</div>
+                        </div>
+                        <a href="">
+                            <img src="./img/sns01.png" alt="">
+                        </a>
+                    </figure>
+                    <figure class="s_d">
+                        <div class="s_info">
+                            <p><i class="xi-facebook-official"></i>Face Book</p>
+                            <div class="sns_txt">어때? #꺾어먹는_죠스밥
+                            </div>
+                        </div>
+                        <a href="">
+                            <img src="./img/sns02.jpg" alt="">
+                        </a>
+                    </figure>
+                    <figure class="s_d">
+                        <div class="s_info">
+                            <p><i class="xi-facebook-official"></i>Face Book</p>
+                            <div class="sns_txt">죠스떡볶이‘14주년이벤트’</div>
+                        </div>
+                        <a href="">
+                            <img src="./img/sns03.png" alt="">
+                        </a>
+                    </figure>
+                    <figure class="s_d">
+                        <div class="s_info">
+                            <p><i class="xi-facebook-official"></i>Face Book</p>
+                            <div class="sns_txt">두둥탁! 죠스어묵티 출시!</div>
+                        </div>
+                        <a href="">
+                            <img src="./img/sns04.jpg" alt="">
+                        </a>
+                    </figure>
+                    <figure class="s_d">
+                        <div class="s_info">
+                            <p><i class="xi-facebook-official"></i>Face Book</p>
+                            <div class="sns_txt">'죠스를깨워죠'이벤트</div>
+                        </div>
+                        <a href="">
+                            <img src="./img/sns05.png" alt="">
+                        </a>
+                    </figure>
+                    <figure class="s_d">
+                        <div class="s_info">
+                            <p><i class="xi-facebook-official"></i>Face Book</p>
+                            <div class="sns_txt">한정판#매워죠스#마라죠스</div>
+                        </div>
+                        <a href="">
+                            <img src="./img/sns06.png" alt="">
+                        </a>
+                    </figure>
+                    <figure class="s_d">
+                        <div class="s_info">
+                            <p><i class="xi-facebook-official"></i>Face Book</p>
+                            <div class="sns_txt">어때? #떡볶이_도시락</div>
+                        </div>
+                        <a href="">
+                            <img src="./img/sns07.jpg" alt="">
+                        </a>
+                    </figure>
+                    <figure class="s_d">
+                        <div class="s_info">
+                            <p><i class="xi-facebook-official"></i>Face Book</p>
+                            <div class="sns_txt">두둥탁! 죠스어묵티 출시!</div>
+                        </div>
+                        <a href="">
+                            <img src="./img/sns04.jpg" alt="">
+                        </a>
+                    </figure>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="right_infobox">
+                <dl>
+                    <dt>브랜드</dt>
+                    <dd>문의하기</dd>
+                    <dd>자주묻는 질문</dd>
+                    <dd>배송</dd>
+                    <dd>반품</dd>
+                    <dd>배송 조회하기</dd>
+                    <dd>이용약관</dd>
+                </dl>
+                <dl>
+                    <dt>메뉴</dt>
+                    <dd>문의하기</dd>
+                    <dd>자주묻는 질문</dd>
+                    <dd>배송</dd>
+                    <dd>반품</dd>
+                    <dd>배송 조회하기</dd>
+                    <dd>이용약관</dd>
+                </dl>
+                <dl>
+                    <dt>스토어</dt>
+                    <dd>문의하기</dd>
+                    <dd>자주묻는 질문</dd>
+                    <dd>배송</dd>
+                    <dd>반품</dd>
+                    <dd>배송 조회하기</dd>
+                    <dd>이용약관</dd>
+                </dl>
+            </div>
+    </div>
+    </footer>
+    </div>
+
+    <script src="./assets/js/jquery-1.12.4.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./js/easy-scroll.js"></script>
+    <script src="./js/jaws.js"></script>
+</body>
+
+</html>

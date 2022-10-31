@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fritz coffee 포트폴리오 20220902</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/siwper_club.css">
+    <style>
+        * {
+            /* outline: 1px solid #f00; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Wrap">
+        <!-- 팝업창 -->
+        <div class="popup">
+            <div class="pop_case">
+                <div class="pop_inner">
+                    <div class="pop_con">
+                        <img src="./assets/popup.jpg" alt="">
+                    </div>
+                    <div class="pop_close">
+                        <input type="checkbox">
+                        <span>오늘 하루 열지 않기</span>
+                        <button><i class="xi-close"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 헤더 -->
+        <header class="Header">
+            <div class="line"></div>
+            <div class="container">
+                <nav class="Gnb">
+                    <ul>
+                        <li>
+                            <a href="">SHOP</a>
+                            <ul class="smenu">
+                                <li><a href="">COFFEE</a></li>
+                                <li><a href="">GOODS</a></li>
+                                <li><a href="">GIFTS</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="menu" href="">COFFEE CLUB</a>
+                        </li>
+                        <li>
+                            <a class="menu" href="">WHOLESALE</a>
+                            <ul class="smenu">
+                                <li><a href="">SHOP</a></li>
+                                <li><a href="">ABOUT BLEND</a></li>
+                                <li><a href="">SAMPLEㅣ샘플신청</a></li>
+                                <li><a href="">NOTICE / Q&A</a></li>
+                                <li><a href="">HELP</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="menu" href="">EDUCATION</a>
+                            <ul class="smenu">
+                                <li><a href=""> 커핑 클래스</a></li>
+                                <li><a href="">수업내용</a></li>
+                                <li><a href="">신청방법</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <h1 class="Logo">
+                    <a href="#!">
+                        <img src="./assets/logo_01.png" alt="">
+                    </a>
+                </h1>
+                <ul class="H_right">
+                    <li>
+                        <a href="">LOGIN</a>
+                    </li>
+                    <li>
+                        <a href="">MY PAGE</a>
+                    </li>
+                    <li>
+                        <a href="">CART </a>
+                    </li>
+                    <li>
+                        <a href="">CONTACT</a>
+                    </li>
+                    <li>
+                        <a href="">ENG <i class="xi-caret-down"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- 메인 -->
+        <main class="Main">
+            <!-- 메인비주얼 -->
+            <section class="Main_Visual">
+                <div class="Main_slider">
+                    <figure>
+                        <img src="./assets/main01.png" alt="">
+                    </figure>
+                    <figure>
+                        <img src="./assets/main02.png" alt="">
+                    </figure>
+                    <figure>
+                        <img src="./assets/main03.png" alt="">
+                    </figure>
+                    <figure>
+                        <img src="./assets/main04.png" alt="">
+                    </figure>
+                </div>
+                <div class="Main_act">
+                    <a href="#s2" class="wheel">
+                        <span>
+                            <i class="xi-angle-down"></i>
+                        </span>
+                    </a>
+                    <!-- <p class="act_txt">DISCOVER MORE</p> -->
+                </div>
+            </section>
+
+            <!-- section01 커피클럽 -->
+            <section class="Section01">
+                <div class="inner">
+                    <div class="sc_tit">
+                        <h2>FRITZ SHOP</h2>
+                        <figure>
+                            <img src="./assets/coffeeclub-logo.png" alt="">
+                        </figure>
+                    </div>
+                    <div class="sc_info">
+                        <h3>COFFEE CLUB</h3>
+                        <p>커피클럽은 어디서든 간편하게 프릳츠 커피를 <br />
+                            즐기실 수 있도록 정기 배송해드리는 프로그램입니다.
+                        </p>
+                        <br />
+                        <p>COFFEE SUBSCRIPTION PROGRAM AT YOUR SERVICE.</p>
+                    </div>
+                    <div class="Club_slider">
+                        <div style="--swiper-navigation-color: #233B5F; --swiper-pagination-color: #fff"
+                            class="swiper mySwiper2">
+                            <!-- right 제품 스와이프 -->
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./assets/coffeeclub00.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/coffeeclub01.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/coffeeclub02.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/coffeeclub03.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/coffeeclub04.jpg" />
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                        <!-- left 제품 스와이프 -->
+                        <div thumbsSlider="" class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./assets/coffeeclub00.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/coffeeclub01.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/coffeeclub02.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/coffeeclub03.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/coffeeclub04.jpg" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- section02 커피클럽 배너 -->
+            <section class="Section02">
+                <div class="inner">
+                    <figure>
+                        <img src="./assets/service_logo.png" alt="">
+                    </figure>
+                    <div class="sc_banner">
+                        <p>
+                            플릳츠가 직접 골라 소개하는 <br />
+                            다양한 커피들을 정기 배송 서비스로 즐겨보세요!
+                        </p>
+                        <div class="sc_go">
+                            <a href="">
+                                <p>정기배송 신청하러 가기
+                                    <i class="xi-trending-flat"></i>
+                                </p>
+                                <!-- <img src="./assets/arrow_right.png" alt=""> -->
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- section03 캡슐 하우스커피 -->
+            <section class="Section03">
+                <div class="inner">
+                    <div class="sc_tit">
+                        <h2>FRITZ SHOP</h2>
+                        <figure>
+                            <img src="./assets/HouseCoffee_logo.png" alt="">
+                        </figure>
+                    </div>
+                    <div class="sc_info">
+                        <h3>COFFEE CLUB</h3>
+                    </div>
+                    <div class="house_ct">
+                        <div class="House_slider">
+                            <figure>
+                                <img src="./assets/house_ct01.jpg" alt="">
+                            </figure>
+                            <figure>
+                                <img src="./assets/house_ct02.jpg" alt="">
+                            </figure>
+                            <figure>
+                                <img src="./assets/house_ct03.jpg" alt="">
+                            </figure>
+                        </div>
+                        <div class="house_info">
+                            <figure>
+                                <img src="./assets/section03_pd.png" alt="">
+                            </figure>
+                            <p>
+                                간편함과 퀄리티를 동시에! <br />
+                                프릳츠에서 만드는 간편 커피 시리즈 <br />
+                                편리한데 맛까지 훌륭합니다.
+                            </p>
+                            <div class="sc_go">
+                                <a href="">하우스 커피 보러가기</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="house_pd">
+                        <div class="house_pd_top">
+                            <figure>
+                                <img src="./assets/cf01.png" alt="" class="pd_f">
+                                <img src="./assets/cf_B_01.png" alt="" class="pd_b">
+                                <p class="pd_tit">[프릳츠] 캡슐커피 잘 되어가시나</p>
+                                <p class="pd_pr">KRW 9,500</p>
+                            </figure>
+                            <figure>
+                                <img src="./assets/cf02.png" alt="" class="pd_f">
+                                <img src="./assets/cf_B_02.png" alt="" class="pd_b">
+                                <p class="pd_tit">[프릳츠] 캡슐커피 잘 되어가시나</p>
+                                <p class="pd_pr">KRW 9,500</p>
+                            </figure>
+                            <figure>
+                                <img src="./assets/cf03.png" alt="" class="pd_f">
+                                <img src="./assets/cf_B_03.png" alt="" class="pd_b">
+                                <p class="pd_tit">[프릳츠] 캡슐커피 잘 되어가시나</p>
+                                <p class="pd_pr">KRW 9,500</p>
+                            </figure>
+                        </div>
+                        <div class="house_pd_btm">
+                            <figure>
+                                <img src="./assets/cf04.png" alt="" class="pd_f">
+                                <img src="./assets/cf_B_04.png" alt="" class="pd_b">
+                                <p class="pd_tit">[프릳츠] 캡슐커피 잘 되어가시나</p>
+                                <p class="pd_pr">KRW 9,500</p>
+                            </figure>
+                            <figure>
+                                <img src="./assets/cf05.png" alt="" class="pd_f">
+                                <img src="./assets/cf_B_05.png" alt="" class="pd_b">
+                                <p class="pd_tit">[프릳츠] 캡슐커피 잘 되어가시나</p>
+                                <p class="pd_pr">KRW 9,500</p>
+                            </figure>
+                            <figure>
+                                <img src="./assets/cf06.png" alt="">
+                                <!-- <p class="pd_tit">[프릳츠] 캡슐커피 잘 되어가시나</p>
+                                <p class="pd_pr">KRW 9,500</p> -->
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- 푸터 -->
+        <footer class="Footer">
+            <div class="inner">
+                <div class="F_logo">
+                    <figure>
+                        <a href="">
+                            <img src="./assets/logo_02.png" alt="">
+                        </a>
+                    </figure>
+                </div>
+                <div class="Address">
+                    <div class="Privacy">
+                        <a href="">개인정보 처리방침</a>
+                    </div>
+                    <div class="Addr">
+                        <ul class="Addr_top">
+                            <li>(주)프리츠(FRITZ CO.,LTD.)</li>
+                            <li>사업자등록번호. 105-88-01127</li>
+                            <li>대표이사 김병기, 박근하</li>
+                            <li>통신판매업. 제2015-서울마포-1772호</li>
+                        </ul>
+                        <ul class="Addr_bottom">
+                            <li>TEL. 02 3275 2047 (MON-FRI. 10AM-6PM)</li>
+                            <li>본사 대표전화 및 가맹상담전화 02-549-3864</li>
+                            <li>WHOLESALE. 010 4504 1799 (MON-FRI. 9AM-6PM)</li>
+                            <li>FAX. 02 6442 2045</li>
+                            <li>E-MAIL. FRITZ@FRITZ.CO.KR</li>
+                        </ul>
+                        <p>&copy; 2015 FRITZCOFFEECOMPANY 상호.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/easy-scroll.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

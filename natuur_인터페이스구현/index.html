@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나뚜루 포트폴리오 20220708</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css">
+    <link rel="stylesheet" href="./css/pf02.css">
+    <link href="http://192.168.100.33:5501/img/logo02.png" rel="shortcut icon" type="image/x-icon">
+</head>
+<style>
+    /* * {
+        outline: 1px solid #f00;
+        list-style: none;
+    } */
+</style>
+
+<body>
+    <div class="Wrap">
+        <header class="header">
+            <div class="header_top">
+                <div class="container">
+                    <figure>
+                        <a href="/">
+                            <img src="./img/naver.png" alt="">
+                        </a>
+                    </figure>
+                    <figure>
+                        <a href="/">
+                            <img src="./img/navershop.png" alt="">
+                        </a>
+                    </figure>
+                    <nav>
+                        <ul>
+                            <li><a href=""></a> 로그인</li>
+                            <li><a href=""></a> 회원가입</li>
+                            <li><a href=""></a> 고객센터</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="header_bottom">
+                <div class="container">
+                    <h1>
+                        <a href="/">
+                            <img src="./img/logo02.png" alt="">
+                        </a>
+                    </h1>
+                    <div id="searchForm">
+                        <form action="javascript:searchAction()">
+                            <input type="text" placeholder="검색어를 입력하세요.">
+                            <button>
+                                <i class="xi-search"></i>
+                            </button>
+                        </form>
+                        <script>
+                            function searchAction() {
+                                var searchValue = $('#searchForm input').val();
+                                if (searchValue.length < 5) {
+                                    alert('더 입력해');
+                                }
+                                else {
+                                    alert(searchValue)
+                                }
+                                $('#searchForm input').val('');
+                                $('#searchForm input').focus();
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <nav class="gnb">
+                <ul>
+                    <li><a href="">NEW</a></li>
+                    <li><a href="">마이 케이크 </a></li>
+                    <li><a href="">베스트 </a></li>
+                    <li><a href="">비건 Vegan</a></li>
+                    <li><a href="">컵</a></li>
+                    <li><a href="">바</a></li>
+                    <li><a href="">전체상품</a></li>
+                    <li><a href="">파인트</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="main">
+                <div class="visual_slider">
+                    <figure class="item01"></figure>
+                    <figure class="item02"></figure>
+                    <figure class="item03"></figure>
+                    <figure class="item04"></figure>
+                    <figure class="item05"></figure>
+                </div>
+                <div class="visual_control">
+                    <i class="xi-angle-left"></i>
+                    <i class="xi-angle-right"></i>
+                </div>
+            </section>
+
+            <section class="coupon">
+                <div class="container">
+                    <div class="coupon_box">
+                        <figure>
+                            <img src="./img/logo01.png" alt="">
+                        </figure>
+                        <p>순수해서 더 진한 맛, 나뚜루</p>
+                    </div>
+                    <div class="coupon_slider">
+                        <figure>
+                            <a href="/">
+                                <img src="./img/coupon01.png" alt="">
+                            </a>
+                        </figure>
+                        <figure>
+                            <a href="/">
+                                <img src="./img/coupon02.png" alt="">
+                            </a>
+                        </figure>
+                        <figure>
+                            <a href="/">
+                                <img src="./img/coupon03.png" alt="">
+                            </a>
+                        </figure>
+                        <figure>
+                            <a href="/">
+                                <img src="./img/coupon04.png" alt="">
+                            </a>
+                        </figure>
+                    </div>
+                    <div class="coupon_control">
+                        <i class="xi-angle-left-min"></i>
+                        <i class="xi-angle-right-min"></i>
+                    </div>
+                    <div class="coupon_service">
+                        <a href="/">
+                            <p>쿠폰 받으러 가기</p>
+                        </a>
+                        <i class="xi-share-alt"></i>
+                    </div>
+                </div>
+            </section>
+
+            <section class="video">
+                <div class="container">
+                    <div class="inner">
+                        <h2>CHERRY UP!</h2>
+                    </div>
+                    <div class="player" data-property=""></div>
+                </div>
+            </section>
+
+            <section class="pint">
+                <h2>NEW</h2>
+                <div class="container">
+                    <figure>
+                        <div class="box">
+                            <img src="./img/new01.jpg" alt="">
+                        </div>
+                        <div class="pint_info">
+                            <span>25%</span>
+                            <span>3,600원</span>
+                        </div>
+                        <strong>나뚜루 순식물성 초콜릿 아몬드바 아이스크림 90ml</strong>
+                    </figure>
+                    <figure>
+                        <div class="box">
+                            <img src="./img/new02.jpg" alt="">
+                        </div>
+                        <div class="pint_info">
+                            <span>25%</span>
+                            <span>5,700원</span>
+                        </div>
+                        <strong>나뚜루 순식물성 초콜릿 아몬드바 아이스크림 90ml</strong>
+                    </figure>
+                    <figure>
+                        <div class="box">
+                            <img src="./img/new03.jpg" alt="">
+                        </div>
+                        <div class="pint_info">
+                            <span>25%</span>
+                            <span>5,700원</span>
+                        </div>
+                        <strong>나뚜루 순식물성 초콜릿 아몬드바 아이스크림 90ml</strong>
+                    </figure>
+                </div>
+            </section>
+
+            <section class="line_banner">
+                <figure>
+                    <img src="./img/line_banner01.png" alt="">
+                </figure>
+            </section>
+
+
+            <section class="cake">
+                <div class="container">
+                    <figure>
+                        <div class="box">
+                            <img src="./img/cake01.jpg" alt="">
+                        </div>
+                        <div class="cake_info">
+                            <span>28,000원</span>
+                        </div>
+                        <strong>(내일출고) 나뚜루 해피데이 레터링 케이크</strong>
+                    </figure>
+                    <figure>
+                        <div class="box">
+                            <img src="./img/cake02.jpg" alt="">
+                        </div>
+                        <div class="cake_info">
+                            <span>28,000원</span>
+                        </div>
+                        <strong>(내일출고) 나뚜루 해피데이 레터링 케이크</strong>
+                    </figure>
+                    <figure>
+                        <div class="box">
+                            <img src="./img/cake03.jpg" alt="">
+                        </div>
+                        <div class="cake_info">
+                            <span>28,000원</span>
+                        </div>
+                        <strong>(내일출고) 나뚜루 해피데이 레터링 케이크</strong>
+                    </figure>
+                    <figure>
+                        <div class="box">
+                            <img src="./img/cake04.jpg" alt="">
+                        </div>
+                        <div class="cake_info">
+                            <span>28,000원</span>
+                        </div>
+                        <strong>(내일출고) 나뚜루 해피데이 레터링 케이크</strong>
+                    </figure>
+                </div>
+            </section>
+            <section class="line_banner">
+                <figure>
+                    <img src="./img/line_banner02.png" alt="">
+                </figure>
+            </section>
+
+            <section class="all">
+                <h2>ALL</h2>
+                <div class="container">
+                    <div class="all_box01">
+                        <figure>
+                            <div class="box">
+                                <img src="./img/all/all01.jpg" alt="">
+                            </div>
+                            <div class="all_info">
+                                <span>20,000원</span>
+                            </div>
+                            <strong>(내일출고) 나뚜루 해피데이 레터링 케이크</strong>
+                            <p>평점 4.6</p>
+                        </figure>
+                        <figure>
+                            <div class="box">
+                                <img src="./img/all/all02.jpg" alt="">
+                            </div>
+                            <div class="all_info">
+                                <span>16,000원</span>
+                            </div>
+                            <strong>(내일출고) 나뚜루 해피데이 레터링 케이크</strong>
+                            <p>평점 3.3</p>
+                        </figure>
+                        <figure>
+                            <div class="box">
+                                <img src="./img/all/all03.jpg" alt="">
+                            </div>
+                            <div class="all_info">
+                                <span>12,000원</span>
+                            </div>
+                            <strong>(내일출고) 나뚜루 해피데이 레터링 케이크</strong>
+                            <p>평점 3.2</p>
+                        </figure>
+                        <figure>
+                            <div class="box">
+                                <img src="./img/all/all04.jpg" alt="">
+                            </div>
+                            <div class="all_info">
+                                <span>35,000원</span>
+                            </div>
+                            <strong>(내일출고) 나뚜루 해피데이 레터링 케이크</strong>
+                            <p>평점 4.1</p>
+                        </figure>
+                    </div>
+                    <div class="all_box02">
+                        <figure>
+                            <div class="box">
+                                <img src="./img/all/all05.jpg" alt="">
+                            </div>
+                            <div class="all_info">
+                                <span>12,000원</span>
+                            </div>
+                            <strong>(내일출고) 나뚜루 해피데이 레터링 케이크</strong>
+                            <p>평점 4.8</p>
+                        </figure>
+                        <figure>
+                            <div class="box">
+                                <img src="./img/all/all06.jpg" alt="">
+                            </div>
+                            <div class="all_info">
+                                <span>13,000원</span>
+                            </div>
+                            <strong>(내일출고) 나뚜루 해피데이 레터링 케이크</strong>
+                            <p>평점 2.9</p>
+                        </figure>
+                        <figure>
+                            <div class="box">
+                                <img src="./img/all/all07.jpg" alt="">
+                            </div>
+                            <div class="all_info">
+                                <span>11,000원</span>
+                            </div>
+                            <strong>(내일출고) 나뚜루 해피데이 레터링 케이크</strong>
+                            <p>평점 4.1</p>
+                        </figure>
+                        <figure>
+                            <div class="box">
+                                <img src="./img/all/all08.jpg" alt="">
+                            </div>
+                            <div class="all_info">
+                                <span>13,000원</span>
+                            </div>
+                            <strong>(내일출고) 나뚜루 해피데이 레터링 케이크</strong>
+                            <p>평점 4.2</p>
+                        </figure>
+                    </div>
+                    <div class="all_box03">
+                        <figure>
+                            <div class="box">
+                                <img src="./img/all/all09.jpg" alt="">
+                            </div>
+                            <div class="all_info">
+                                <span>28,000원</span>
+                            </div>
+                            <strong>(내일출고) 나뚜루 해피데이 레터링 케이크</strong>
+                            <p>평점 4.9</p>
+                        </figure>
+                        <figure>
+                            <div class="box">
+                                <img src="./img/all/all10.jpg" alt="">
+                            </div>
+                            <div class="all_info">
+                                <span>18,000원</span>
+                            </div>
+                            <strong>(내일출고) 나뚜루 해피데이 레터링 케이크</strong>
+                            <p>평점 4.6</p>
+                        </figure>
+                        <figure>
+                            <div class="box">
+                                <img src="./img/all/all11.jpg" alt="">
+                            </div>
+                            <div class="all_info">
+                                <span>11,000원</span>
+                            </div>
+                            <strong>(내일출고) 나뚜루 해피데이 레터링 케이크</strong>
+                            <p>평점 4.8</p>
+                        </figure>
+                        <figure>
+                            <div class="box">
+                                <img src="./img/all/all12.jpg" alt="">
+                            </div>
+                            <div class="all_info">
+                                <span>45,000원</span>
+                            </div>
+                            <strong>(내일출고) 나뚜루 해피데이 레터링 케이크</strong>
+                            <p>평점 3.5</p>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <footer class="footer">
+            <div class="container">
+                &copy; footer입니다^^ 감사합니다^^
+                <div class="clause">
+                    <!-- <ul>
+                        <li>
+                            <a href="">네이버약관</a>
+                        </li>
+                        <li>
+                            <a href="">네이버페이</a>
+                        </li>
+                        <li>
+                            <a href="">전자금융거래 이용약관</a>
+                        </li>
+                        <li>
+                            <a href="">개인정보처리방침</a>
+                        </li>
+                        <li>
+                            <a href="">책임의 한계와 법적고지</a>
+                        </li>
+                        <li>
+                            <a href="">청소년보호정책</a>
+                        </li>
+                        <li>
+                            <a href="">지식재산권신고센터</a>
+                        </li>
+                        <li>
+                            <a href="">쇼핑&페이 고객센터</a>
+                        </li>
+                    </ul> -->
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="./js/jquery.scrollme.min.js"></script>
+    <script src="./js/pf02.js"></script>
+</body>
+
+</html>
